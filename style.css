@@ -46,16 +46,7 @@ nav a:hover{
     color:#FFD700;
 }
 .hero{
-    min-height:80vh;
-    background-image:
-        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
-        url("hero/background.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    display:flex;
-    align-items:center;
-    padding:80px;
+    ...
 }
 
 .hero-content{
@@ -611,4 +602,25 @@ footer p{
 .faq-box p{
     color:#ddd;
     line-height:1.7;
+}
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero,
+    .hero-content,
+    .product-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
 }
