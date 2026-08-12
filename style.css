@@ -28,6 +28,11 @@ header{
     font-weight:bold;
     color:#FFD700;
 }
+.logo img{
+    width:70px;
+    height:auto;
+    display:block;
+}
 
 nav a{
     color:white;
@@ -40,6 +45,19 @@ nav a{
 nav a:hover{
     color:#FFD700;
 }
+.hero{
+    min-height:80vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)),
+        url("hero/background.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    padding:80px;
+}
+
 .hero-content{
     max-width:650px;
 }
@@ -417,7 +435,6 @@ footer p{
     color:#cccccc;
     line-height:1.7;
 }
-
 .packages{
     padding:80px 8%;
     background:#000;
